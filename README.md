@@ -97,3 +97,5 @@ It is designed as a **research and planning tool** for urban developers, policym
 
 * **Pathan Gulamgaush (UchihaDZoro)**
 * **Nancy Srivastava (Nancy-05-Srivastava)**
+
+* 🔗 Deployed Webapp: Unified-AI-Driven-GIS-Based-Analytics-Platform
