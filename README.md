@@ -1,6 +1,6 @@
 # 🌍 AI-Driven GIS Analytics Platform
 
-A unified **AI-powered Geographic Information System (GIS) platform** for analyzing, tracking, and visualizing urban and environmental data. This platform combines interactive mapping with AI-driven analytics (powered by **U-Net based image segmentation** and other ML pipelines) to generate insights on **crime, pollution, biodiversity, infrastructure, sustainability, and urban development**.
+A unified **AI-powered Geographic Information System (GIS) platform** for analyzing, tracking, and visualizing urban and environmental data. It combines interactive mapping with AI-driven analytics (powered by **U-Net segmentation** and **RAG-based contextual models**) to deliver deep insights into **crime, pollution, biodiversity, infrastructure, sustainability, and urban growth**.
 
 It is designed as a **research and planning tool** for urban developers, policymakers, researchers, and civic authorities to make **data-driven, sustainable decisions**.
 
@@ -10,154 +10,90 @@ It is designed as a **research and planning tool** for urban developers, policym
 
 ### 🗺️ Interactive Mapping
 
-* Built with **Leaflet.js** for dynamic maps.
+* Dynamic maps built with **Leaflet.js**.
 * Pan, zoom, and toggle between multiple base layers (urban, vegetation, transport).
-* Define an **Analysis Radius** to focus on regions of interest.
+* Define an **Analysis Radius** for focused study.
 
 ### 🤖 AI-Powered Land Cover Analysis
 
-* Upload satellite imagery or select an area from the map.
+* Upload satellite images or select areas directly from the map.
 * Uses **U-Net deep learning model** for semantic segmentation.
-* Detects and classifies land cover types:
-
-  * 🏢 **Buildings**
-  * 🌱 **Vegetation**
-  * 💧 **Water Bodies**
-  * 🛣️ **Infrastructure**
-* Provides:
-
-  * Original vs segmented image (side-by-side).
-  * Percentage breakdown of each land cover type.
-  * Exportable results for further analysis.
+* Detects land covers like Buildings, Vegetation, Water, and Infrastructure.
+* Provides side-by-side comparison + percentage breakdowns.
 
 ### 📊 AI-Generated Sustainability Reports
 
-* Auto-generates sustainability assessments for selected regions.
-* Provides:
+* Region-wise reports generated automatically.
+* Includes a **Sustainability Index (0–100)**, building density, vegetation ratio, and infrastructure growth potential.
+* Delivers expert-style recommendations for **sustainable development**.
 
-  * **Sustainability Index (0–100)**.
-  * Building density and vegetation ratios.
-  * Infrastructure potential (roads, transport, housing).
-  * Actionable recommendations for sustainable development.
+### 🔍 On-Demand GIS Insights with RAG
 
-### 🔍 On-Demand GIS Insights
+* Integrates a **Retrieval-Augmented Generation (RAG) model** for context-aware insights.
+* Pulls relevant GIS datasets, risk data, and environmental reports.
+* Generates precise summaries on:
 
-* Generate quick **topic-based insights** such as:
-
-  * **Safety & Crime Mapping**
-  * **Pollution Monitoring**
-  * **Tourism Accessibility**
-  * **Infrastructure Stress Zones**
+  * **Safety & Crime Hotspots**
+  * **Pollution & Environmental Stress**
+  * **Tourism & Accessibility**
+  * **Infrastructure Bottlenecks**
 
 ### 🌐 Integrated Risk Maps
 
-* Includes pre-built risk maps for:
-
-  * **Crime Hotspots**
-  * **Transportation Risk Zones**
-  * **Biodiversity Stress**
-  * **Vegetation Loss**
-  * **Water Body Risks**
-* Maps are available as **iframes and local HTML layers** for seamless integration.
+* Risk visualizations for crime, biodiversity, transport, vegetation, and water.
+* Combines **ArcGIS datasets** with **locally hosted layers**.
 
 ---
 
 ## 🛠️ Tech Stack
 
-**Frontend:** React + TypeScript
-**Mapping:** Leaflet.js
-**AI/ML Models:** U-Net (image segmentation), Scikit-learn pipelines
-**Data Handling:** JSON + REST APIs
-**Visualization:** Risk map layers, Chart components
-**Build Tool:** Vite
+* **Frontend:** React + TypeScript
+* **Mapping:** Leaflet.js
+* **AI/ML Models:**
 
----
-
-## 🚀 Getting Started
-
-### Prerequisites
-
-* Node.js >= 18
-* npm or yarn
-* Python 3.9+ (for ML model integration with U-Net)
-
-### Installation
-
-```bash
-# Clone repository
-git clone https://github.com/your-username/ai-gis-platform.git
-
-# Enter directory
-cd ai-gis-platform
-
-# Install dependencies
-npm install
-
-# Run development server
-npm run dev
-```
-
----
-
-## 📖 Usage
-
-1. Open the platform in the browser (`http://localhost:5173`).
-2. Navigate the **map interface** and select an area.
-3. Upload a satellite image or run local analysis.
-4. Perform **land cover segmentation** (U-Net).
-5. View **sustainability reports & recommendations**.
-6. Explore **risk maps** for crime, biodiversity, water, and infrastructure.
+  * **U-Net** (image segmentation)
+  * **RAG-based NLP models** (contextual GIS insights)
+* **Data Handling:** JSON, REST APIs
+* **Visualization:** Charts, Risk Maps
+* **Build Tool:** Vite
 
 ---
 
 ## 🔬 AI/ML Integration
 
-* **U-Net for Segmentation:**
+* **U-Net Segmentation:**
 
-  * Input: Satellite imagery.
-  * Output: Segmented regions for buildings, vegetation, water, infrastructure.
-  * Applications: Land use planning, deforestation tracking, urban expansion monitoring.
+  * For land cover classification (Buildings, Vegetation, Water).
+  * Useful in land use planning, deforestation detection, and urban growth tracking.
 
-* **Additional ML Pipelines:**
+* **RAG-Based Contextual Analysis:**
 
-  * Pollution risk detection.
-  * Crime data clustering.
-  * Infrastructure stress analysis.
+  * Combines vector search + LLMs for domain-specific queries.
+  * Fetches relevant documents, crime datasets, pollution indices, and GIS layers.
+  * Produces **reliable, grounded insights** rather than hallucinations.
 
 ---
 
 ## 🌟 Use Cases
 
-* **Urban Development:** Plan housing, transport, and infrastructure.
-* **Environmental Monitoring:** Detect deforestation, biodiversity stress, water scarcity.
-* **Risk Management:** Assess crime, pollution, and disaster-prone regions.
-* **Policy & Governance:** Provide data-driven urban strategies.
-* **Tourism & Accessibility:** Highlight sustainable and safe zones.
+* **Urban Planning**: Road, housing, and transport design.
+* **Environmental Monitoring**: Deforestation, biodiversity decline, pollution spread.
+* **Risk Management**: Identifying high-risk zones for crime, floods, or pollution.
+* **Policy & Governance**: Evidence-backed planning.
+* **Tourism & Accessibility**: Mapping safe and sustainable routes.
 
 ---
 
 ## 📌 Future Enhancements
 
-* Integration with **real-time IoT sensors** (pollution, weather, traffic).
-* **Time-series analysis** of satellite data for trend detection.
-* Support for **3D GIS visualization**.
-* Advanced deep learning (e.g., Vision Transformers for higher accuracy).
-* Mobile-friendly lightweight version.
+* Real-time IoT sensor data fusion (pollution, weather, traffic).
+* Time-series GIS change detection.
+* 3D GIS visualization support.
+* Transformer-based vision models for more precise mapping.
 
 ---
 
-## 📜 License
+## 👨‍💻 Contributors:
 
-Licensed under the **MIT License** – free to use and modify.
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! Please fork the repo and create pull requests.
-
----
-
-## 👨‍💻 Author
-
-Developed by **Pathan Gulamgaush (UchihaDZoro)** 🚀
+* **Pathan Gulamgaush (UchihaDZoro)**
+* **Nancy Srivastava (Nancy-05-Srivastava)**
