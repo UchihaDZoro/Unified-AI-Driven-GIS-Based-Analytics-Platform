@@ -1,0 +1,6 @@
+Region,Latitude,Longitude,Vegetation_Cover_Percentage,Water_Bodies_Percentage,Urban_Area_Percentage
+Region A,34.05,-118.25,15,5,80
+Region B,36.16,-115.15,20,8,72
+Region C,40.71,-74.0,25,6,69
+Region D,51.5,-0.12,10,3,87
+Region E,48.85,2.35,18,7,75
