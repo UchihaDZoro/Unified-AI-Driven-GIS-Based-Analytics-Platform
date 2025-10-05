@@ -1,0 +1,5 @@
+{
+  "name": "AI-Driven GIS Platform",
+  "description": "An AI-powered Geographic Information System (GIS) platform for urban planning and environmental analysis. This tool provides interactive mapping, biodiversity assessment through image analysis, and AI-generated sustainability recommendations.",
+  "requestFramePermissions": []
+}
